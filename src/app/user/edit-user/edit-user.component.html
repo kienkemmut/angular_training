@@ -1,0 +1,167 @@
+<body>
+<header class="navbar navbar-expand-lg navbar-light bg-white p-0">
+  <a>
+    <img src="/assets/images/navi_logo.gif">
+  </a>
+  <a class="float-left ml-3 text-dark" data-toggle="collapse"  href="#demo" >
+    <span class="fas fa-bars"></span>
+  </a>
+  <nav class="col-md-3 col-sm-12 col-xs-12 text-danger">Home</nav>
+</header>
+<div class="container-fluid">
+  <div class="side-bar collapse show" id="demo">
+    <div>
+      <a> <img src="/assets/images/login.gif"></a>
+    </div>
+    <ul class="menu">
+      <li class="css-sprite-schedule">
+        <a routerLink="appointments"></a>
+      </li>
+      <li class="css-sprite-reserve">
+        <a routerLink="users/edit/[id]"></a>
+      </li>
+      <li class="css-sprite-setup">
+        <a routerLink="settings"></a>
+      </li>
+      <li class="css-sprite-room">
+        <a routerLink="create-appointment.html"></a>
+      </li>
+      <li class="css-sprite-manual">
+        <a routerLink="page-not-found.html"></a>
+      </li>
+      <li class="mt-lg-3 css-sprite-top" >
+        <a routerLink="#top"></a>
+      </li>
+      <li class="css-sprite-logout">
+        <a routerLink="logout.html"></a>
+      </li>
+      <li  class="mr-4">
+        <label>EN JP</label>
+      </li>
+    </ul>
+
+  </div>
+
+
+
+  <div class="content-wrapper">
+    <div class="row">
+      <main class="col-md-8 mt-2 mb-2">
+        <div class="wrapper">
+          <div class="col-sm-12">
+            <div class="row text-center">
+              <button type="button" class="col-sm-3 btn btn-primary">Reservation Information</button>
+              <button type="button" class="col-sm-3 btn btn-link text-white">List participants</button>
+              <button type="button" class="col-sm-2 btn btn-link text-white">Documents</button>
+              <button type="button" class="col-sm-2 btn btn-link text-white">Email</button>
+              <button type="button" class="col-sm-2 btn btn-link text-white">Back to list</button>
+            </div>
+
+
+          </div>
+        </div>
+      </main>
+    </div>
+    <div class="row">
+      <main class="col-md-8">
+        <div class="wrapper">
+
+          <div class="card" style="margin-bottom: 20px; color: white">
+            <div class="card ">
+              <form class="form-group" style="margin: 10px">
+                <div class="form-group row">
+                  <label class="col-sm-2 col-form-label">Conference Room</label>
+                  <div class="col-sm-10">
+                    <select class="custom-select">
+                      <option></option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                    </select>
+
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="col-sm-2 col-form-label">Password</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" >
+                  </div>
+                </div>
+                <div class="form-group checkbox row">
+                  <label class="col-sm-2">Mode</label>
+                  <div class="col-sm-2">
+                    <input type="radio" value="1">
+                    <label class="form-check-label">Chairman mode</label>
+                  </div>
+                  <div class="col-sm-3">
+                    <input type="radio" value="2">
+                    <label class="form-check-label">Simultaneous mode</label>
+                  </div>
+                </div>
+                <div class="form-group row" >
+                  <label class="col-md-2 col-form-label">Call Conference</label>
+                  <div class="col-md-10">
+                    <div class="row">
+                      <div class="col form-group">
+                        <button type="button" class=" btn btn-secondary btn-block " >30 minutes from now</button>
+                      </div>
+                      <div class="col form-group">
+                        <button type="button" class=" btn btn-secondary btn-block"  >1 hour from now</button>
+                      </div>
+                      <div class="col form-group">
+                        <button type="button" class=" btn btn-secondary btn-block" >3 hour from now</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="control-label col-md-2 col-sm-12 col-xs-12" >Start Date</label>
+                  <div class="col-md-10 col-sm-12 col-xs-12" >
+                    <div class="input-group">
+                      <input type="text" class="form-control datetimepicker" placeholder="" name="start-date" >
+                      <div class="input-group-prepend">
+                        <div class="input-group-text style-div-icon"><i class="far fa-calendar-alt"></i></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="control-label col-md-2 col-sm-12 col-xs-12">End Date</label>
+                  <div class="col-md-10 col-sm-12 col-xs-12" >
+                    <div class="input-group">
+                      <input type="text" class="form-control datetimepicker" placeholder="" name="start-date" >
+                      <div class="input-group-prepend">
+                        <div class="input-group-text style-div-icon"><i class="far fa-calendar-alt"></i></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="col-sm-2 col-form-label">Agenda</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" >
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="col-sm-2 col-form-label">Notice</label>
+                  <div class="col-sm-10">
+                    <textarea class="form-control" rows="5" id="comment"></textarea>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-sm-12">
+                    <button type="button" class="btn btn-success float-right">Save</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </main>
+    </div>
+  </div>
+
+</div>
+
+</body>

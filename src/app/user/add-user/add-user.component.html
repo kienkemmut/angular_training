@@ -1,0 +1,149 @@
+
+<header class="navbar navbar-expand-lg navbar-light bg-nav p-0">
+  <a>
+    <img src="/assets/images/navi_logo.gif">
+  </a>
+  <a class=" ml-3 text-dark" data-toggle="collapse"  href="#demo" >
+    <span class="fas fa-bars"></span>
+  </a>
+  <nav class="ml-3 text-danger">Home</nav>
+</header>
+<div class="container-fluid">
+  <div class="side-bar collapse show" id="demo">
+    <div>
+      <a> <img src="/assets/images/login.gif"></a>
+    </div>
+    <ul class="menu">
+      <li class="css-sprite-schedule">
+        <a routerLink="appointments"></a>
+      </li>
+      <li class="css-sprite-reserve">
+        <a routerLink="users/edit/[id]"></a>
+      </li>
+      <li class="css-sprite-setup">
+        <a routerLink="settings"></a>
+      </li>
+      <li class="css-sprite-room">
+        <a routerLink="create-appointment.html"></a>
+      </li>
+      <li class="css-sprite-manual">
+        <a routerLink="page-not-found.html"></a>
+      </li>
+      <li class="mt-lg-3 css-sprite-top" >
+        <a routerLink="#top"></a>
+      </li>
+      <li class="css-sprite-logout">
+        <a routerLink="logout.html"></a>
+      </li>
+      <button class="btn btn-link">EN</button>
+      <button class="btn btn-link">JP</button>
+    </ul>
+  </div>
+    <div class="content-wrapper col-md-7 col-sm-12 col-xs-12">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-10 mt-2 " >
+            <form class="p-2 text-white" style="background-color: #222222" >
+              <div class="form-group row">
+                <label class="col-lg-2 col-form-label">Conference Room</label>
+                <div class="col-lg-10">
+                  <select class="custom-select">
+                    <option></option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-lg-2 col-form-label">Password</label>
+                <div class="col-lg-10">
+                  <input type="text" class="form-control" >
+                </div>
+              </div>
+              <div class="form-group checkbox row">
+                <label class="col-lg-2">Mode</label>
+                <div class="col-lg-10">
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <input type="radio" value="1">
+                      <label class="form-check-label">Chairman mode</label>
+                    </div>
+                    <div class="col-sm-4">
+                      <input type="radio" value="2">
+                      <label class="form-check-label">Simultaneous mode</label>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="form-group row" >
+                <label class="col-md-2 col-form-label">Call Conference</label>
+                <div class="col-md-10">
+                  <div class="row">
+                    <div class="col form-group">
+                      <button type="button" class=" btn btn-dark btn-block " >30 minutes from now</button>
+                    </div>
+                    <div class="col form-group">
+                      <button type="button" class=" btn btn-dark btn-block"  >1 hour from now</button>
+                    </div>
+                    <div class="col form-group">
+                      <button type="button" class=" btn btn-dark btn-block" >3 hour from now</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="control-label col-md-2 col-sm-12 col-xs-12" for="start-date">Start Date</label>
+                <div class="col-lg-10 col-sm-12 col-xs-12" >
+
+                  <div class="input-group">
+                    <input type="text" class="form-control datetimepicker" placeholder="" name="start-date" id="start-date">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text style-div-icon"><i class="far fa-calendar-alt"></i></div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="control-label col-md-2 col-sm-12 col-xs-12" for="start-date">End Date</label>
+                <div class="col-md-10 col-sm-12 col-xs-12" >
+                  <div class="input-group">
+                    <input type="text" class="form-control datetimepicker" placeholder="" name="start-date">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text style-div-icon"><i class="far fa-calendar-alt"></i></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Agenda</label>
+                <div class="col-sm-10">
+
+                  <input type="text" class="form-control" >
+
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Notice</label>
+                <div class="col-sm-10">
+
+                  <textarea class="form-control" rows="5" id="comment"></textarea>
+                </div>
+
+              </div>
+              <div class="form-group row">
+                <div class="col-md-12">
+
+                  <button type="button" class="btn btn-success float-right" >Save</button>
+
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>

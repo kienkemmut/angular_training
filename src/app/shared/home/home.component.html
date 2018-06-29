@@ -1,0 +1,123 @@
+<html>
+<body>
+<header class="navbar navbar-expand-lg navbar-light bg-nav p-0">
+  <a>
+    <img src="/assets/images/navi_logo.gif">
+  </a>
+  <a class=" ml-3 text-dark" data-toggle="collapse"  href="#demo" >
+    <span class="fas fa-bars"></span>
+  </a>
+  <nav class="ml-3 text-danger">Home</nav>
+</header>
+<div class="container-fluid">
+  <div class="row">
+    <div class="side-bar collapse show" id="demo">
+      <div>
+        <a> <img src="/assets/images/login.gif"></a>
+      </div>
+      <ul class="menu">
+        <li class="css-sprite-schedule">
+          <a routerLink="/appointments"></a>
+        </li>
+        <li class="css-sprite-reserve">
+          <a routerLink="/users/edit/[id]/"></a>
+        </li>
+        <li class="css-sprite-setup">
+          <a routerLink="/settings"></a>
+        </li>
+        <li class="css-sprite-room">
+          <a routerLink="/users/add"></a>
+        </li>
+        <li class="css-sprite-manual">
+          <a routerLink="page-not-found.html"></a>
+        </li>
+        <li class="mt-lg-3 css-sprite-top" >
+          <a routerLink="#top"></a>
+        </li>
+        <li class="css-sprite-logout">
+          <a routerLink="logout.html"></a>
+        </li>
+        <button class="btn btn-link">EN</button>
+        <button class="btn btn-link">JP</button>
+      </ul>
+    </div>
+
+    <div  class="content-wrapper col-md-12  col-lg-10 ">
+      <div class="container-fluid">
+        <h1 class="display-3 text-center text-white">
+          Welcome!
+        </h1>
+      </div>
+      <div class="container">
+        <div class="container">
+          <div class="card-deck">
+            <div class="card">
+              <div class="card-body ">
+                <div class="icon">
+                  <a routerLink="/" ><i class="fa fa-home"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body ">
+                <div class="icon">
+                  <a routerLink="/users/list"><i class="fa fa-users"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body ">
+                <div class="icon">
+                  <a routerLink="/appointments"><i class="fa fa-calendar-alt"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body ">
+                <div class="icon">
+                  <a routerLink="**"><i class="fa fa-comment"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="card-deck">
+            <div class="card">
+              <div class="card-body ">
+                <div class="icon">
+                  <a routerLink="**"><i class="fa fa-cubes"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body ">
+                <div class="icon">
+                  <a routerLink="**"><i class="fa fa-book"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body ">
+                <div class="icon">
+                  <a routerLink="/settings"><i class="fa fa-cogs"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body ">
+                <div class="icon">
+                  <a routerLink="**"><i class="fa fa-sign-out-alt"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

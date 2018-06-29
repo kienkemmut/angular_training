@@ -1,1 +1,185 @@
-/* You can add global styles to this file, and also import other style files */
+//colors
+$color_mine_shaft_approx: #303030;
+$white: white;
+$color_tropical_rain_forest_approx: #007b5a;
+$color_black_approx: #040505;
+$color_green_language: #00bc8c;
+$color_nav: #E0E0E0;
+
+//urls
+$url_0: url(/assets/images/mian-bg2.gif);
+$url_1: url(/assets/images/schedule.gif);
+$url_2: url(/assets/images/schedule-over.gif);
+$url_3: url(/assets/images/reserve.gif);
+$url_4: url(/assets/images/reserve-over.gif);
+$url_5: url(/assets/images/setup.gif);
+$url_6: url(/assets/images/setup-over.gif);
+$url_7: url(/assets/images/room.gif);
+$url_8: url(/assets/images/room-over.gif);
+$url_9: url(/assets/images/manual_icon_white.gif);
+$url_10: url(/assets/images/manual_icon.gif);
+$url_11: url(/assets/images/top1.gif);
+$url_12: url(/assets/images/top2.gif);
+$url_13: url(/assets/images/logout.gif);
+$url_14: url(/assets/images/logout-over.gif);
+$url_15: url(/assets/images/css-sprite-combined.png.png);
+
+
+.side-bar {
+  word-spacing: 20px;
+  top: 40px;
+  height: 934px;
+  width: 208px;
+  background-color: $color_black_approx;
+  position: absolute;
+  left: 0;
+}
+
+.table-color{
+  background-color: $color_mine_shaft_approx;
+}
+
+.bg-nav{
+  background-color: $color_nav;
+}
+
+body {
+  background: url(/assets/images/mian-bg2.gif) repeat;
+}
+
+
+.header {
+  float: left;
+  line-height: 40px;
+}
+.card-body {
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.card {
+  background-color: $color_mine_shaft_approx;
+}
+.icon {
+  color: $white;
+  a {
+    color: $white;
+  }
+  i {
+    font-size: 100px;
+  }
+}
+.container {
+  margin-bottom: 30px;
+}
+
+.content-wrapper {
+  margin-left: 208px;
+}
+.fa-bars {
+  font-size: 18px;
+}
+.image {
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.wrapper {
+  margin-bottom: auto;
+}
+.btn-link{
+  color: $color_green_language;
+  font-weight: 400;
+  margin-left: 15px;
+}
+.card-body:hover{
+  color: $white;
+}
+a{
+  color: $white;
+}
+a:hover{
+  color: $white;
+}
+
+ul {
+  li {
+    list-style: none;
+  }
+  &.menu li {
+    a {
+      background: $url_15 no-repeat;
+      display: inline-block;
+      width: 208px;
+      height: 63px;
+    }
+    &.css-sprite-schedule a {
+      background-position: -1px 0;
+      &:hover {
+        background-position: -1px -63px;
+      }
+    }
+    &.css-sprite-reserve a {
+      background-position: -1px -126px;
+      &:hover {
+        background-position: -1px -189px;
+      }
+    }
+    &.css-sprite-setup a {
+      background-position: -1px -252px;
+      &:hover {
+        background-position: -1px -315px;
+      }
+    }
+    &.css-sprite-room a {
+      background-position: -1px -378px;
+      &:hover {
+        background-position: -1px -441px;
+      }
+    }
+    &.css-sprite-manual a {
+      background-position: -0px -504px;
+      &:hover {
+        background-position: -0px -568px;
+      }
+    }
+    &.css-sprite-top a {
+      background-position: -0px -632px;
+      margin-top: 50px;
+      &:hover {
+        background-position: -0px -696px;
+      }
+    }
+    &.css-sprite-logout a {
+      background-position: -1px -760px;
+      &:hover {
+        background-position: -1px -823px;
+      }
+    }
+  }
+}
+
+
+@media only screen and(max-width: 1200px) {
+  .icon i {
+    font-size: 5rem;
+  }
+}
+@media only screen and(max-width: 992px) {
+  .icon i {
+    font-size: 4rem;
+  }
+}
+@media only screen and(max-width: 768px) {
+  .icon i {
+    font-size: 4rem;
+  }
+}
+@media only screen and(max-width: 600px) {
+  .icon i {
+    font-size: 4rem;
+  }
+}
+div.ui-datepicker {
+  font-size: 10px;
+}

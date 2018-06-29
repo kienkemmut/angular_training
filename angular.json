@@ -27,9 +27,17 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/@fortawesome/fontawesome-free-webfonts/css/fa-solid.css",
+              "node_modules/@fortawesome/fontawesome-free-webfonts/css/fa-regular.css",
+              "node_modules/@fortawesome/fontawesome-free-webfonts/css/fontawesome.css",
+              "node_modules/bootswatch/dist/darkly/bootstrap.min.css",
+              "node_modules/fullcalendar/dist/fullcalendar.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.slim.js",
+              "node_modules/bootstrap/dist/js/bootstrap.js"
+            ]
           },
           "configurations": {
             "production": {

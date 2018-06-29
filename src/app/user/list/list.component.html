@@ -1,0 +1,104 @@
+
+<header class="navbar navbar-expand-lg navbar-light bg-nav p-0">
+  <a>
+    <img src="/assets/images/navi_logo.gif">
+  </a>
+  <a class=" ml-3 text-dark" data-toggle="collapse"  href="#demo" >
+    <span class="fas fa-bars"></span>
+  </a>
+  <nav class="ml-3 text-danger">Home</nav>
+</header>
+<div class="container-fluid">
+  <div class="side-bar collapse show" id="demo">
+    <div>
+      <a> <img src="/assets/images/login.gif"></a>
+    </div>
+    <ul class="menu">
+      <li class="css-sprite-schedule">
+        <a routerLink="appointments"></a>
+      </li>
+      <li class="css-sprite-reserve">
+        <a routerLink="users/edit/[id]"></a>
+      </li>
+      <li class="css-sprite-setup">
+        <a routerLink="settings"></a>
+      </li>
+      <li class="css-sprite-room">
+        <a routerLink="create-appointment.html"></a>
+      </li>
+      <li class="css-sprite-manual">
+        <a routerLink="page-not-found.html"></a>
+      </li>
+      <li class="mt-lg-3 css-sprite-top" >
+        <a routerLink="#top"></a>
+      </li>
+      <li class="css-sprite-logout">
+        <a routerLink="logout.html"></a>
+      </li>
+      <button class="btn btn-link">EN</button>
+      <button class="btn btn-link">JP</button>
+    </ul>
+  </div>
+
+    <div class="content-wrapper col-md-10 mt-2">
+      <div class="wrapper">
+        <div class="row">
+          <div class="col-md-12 mt-2 mb-2">
+            <div class="wrapper">
+              <div class="col-sm-12 ">
+                <div class="row align-items-center justify-content-center">
+                  <button type="button" class="col-sm-1 btn btn-primary"><a routerLink="/users/list">User list</a></button>
+                  <button type="button" class="col-sm-1 btn btn-link text-white"><a routerLink="/users/add">Add user</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <table class="col-md-12 table-bordered table-color text-white text-center">
+            <thead>
+            <tr>
+              <th>Username</th>
+              <th >Display name</th>
+              <th >Email</th>
+              <th >Email 2</th>
+              <th >Is Chairman</th>
+              <th>Is Admin</th>
+              <th>Set order<div><button type="button" class="btn">Confirm</button></div></th>
+              <th>Action</th>
+            </tr>
+            </thead>
+            <tbody >
+              <tr *ngFor = "let obj of receivedUser">
+                <td>{{obj.username }}</td>
+                <td>{{obj.display_name}}</td>
+                <td>{{obj.email}}</td>
+                <td>{{obj.email_alt}}</td>
+                <td>
+                  <span *ngIf="obj.is_chairman === 1;else other">Yes</span>
+                  <ng-template #other>No</ng-template>
+                </td>
+                <td>
+                  <span *ngIf="obj.is_admin === 1;else other">Yes</span>
+                  <ng-template #other>No</ng-template>
+                </td>
+                <td><input type="text" class="input-set-order text-center" value="{{obj.order}}" size="4%" ></td>
+                <td class="col">
+                  <div class="col-md-4 btn btn-secondary" ><a href="#" class="fas fa-edit"></a></div>
+                  &nbsp;
+                  <div class="col-md-4 btn btn-danger"><a class="fas fa-trash"></a></div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <!--<code>{{ User | json }}</code>-->
+          <div id = "myLoad" style="display:none ; text-align: center;"><img src = "/assets/images/ajax-loader.gif"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
